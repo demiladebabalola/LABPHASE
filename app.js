@@ -104,3 +104,10 @@ submitBtn.addEventListener('click', () => {
         }
     }
 });
+answerEls.forEach(answerEl => {
+  answerEl.addEventListener('change', () => {
+    // Capture the selected answer
+    const selectedAnswer = answerEl.id;
+    console.log('User selected:', selectedAnswer);
+  });
+});
